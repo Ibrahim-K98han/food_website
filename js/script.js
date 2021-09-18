@@ -31,3 +31,27 @@ var swiper = new Swiper(".home-slider", {
     },
     loop: true,
 });
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPreView: 1,
+        },
+        640: {
+            slidesPreView: 2,
+        },
+        768: {
+            slidesPreView: 2,
+        },
+        1024: {
+            slidesPreView: 3,
+        },
+    },
+});
